@@ -1,0 +1,45 @@
+
+
+Things added by Harrison Wyllie
+-------------------------------------------
+HTML
+----------
+divs for links in nave bar
+
+empty list elements to populate with JS
+
+----------
+JS
+----------
+
+checkForFavorites()-called on startup
+
+submitNewStory()-listens for submit on form, creates new story, adds to page, hidden on page load, hides on submit, calls addStory()
+
+favoriteStory()-listens for click on checkbox in ol, adds/removes to api favorites, updates user instance
+
+checkForFavorites() -iterates through favorites array to change checkbox properties in the dom, runs on startup
+
+navSubmitClick()-listens for click on added nav-link in top nav bar, hides/shows add story form
+
+getHostName()-returns url
+
+addStory()-adds story to api with values passed in through submitNewStory(), creates new instance of Story and adds it to StoryList instance
+
+addFavorite()/removeFavorite()-adds or removes a favorite to the current instance of User
+
+navFavoritesClick()-hide stories, show favorites, call generateFavoritesMarkup, create ul
+
+deleteStory()-deletes story from api, updates dom
+
+putFavoritesOnPage()-clears list, loops over favorites, calls generateStoryMarkup(), appends to list
+
+navMyStoriesClick()-calls putMyStoriesOnPage(), hides irrelevant lists
+
+putMyStoriesOnPage()-clears list, loops over ownStories, calls generateMyStoriesMarkup(), appends to list
+
+generateMyStoriesMarkup-same as generateStoryMarkup, except remove checkbox input and add button
+
+
+
+
